@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Eupraxia Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><img src="https://eupraxiaconsulting.com/assets/images/logo/euprexia-logo.png" class="logo" alt=""></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul id="navList">
+        <li><a data-page="home" href="index.html">Home</a></li>
+        <li><a data-page="about" href="about.html">About</a></li>
+        <li><a data-page="services" href="services.html">Services</a></li>
+        <li><a data-page="send" href="send.html">SEND</a></li>
+        <li><a data-page="tools" href="tools.html">Tools</a></li>
+        <li><a data-page="trends" href="trends.html">Trends</a></li>
+        <li><a data-page="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero section">
+    <video class="hero-video" autoplay muted loop playsinline poster="https://placehold.co/1600x900?text=Contact+Us">
+      <source src="https://videos.pexels.com/video-files/3195393/3195393-uhd_2560_1440_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="glass-card reveal-zoom"><h1>Contact & Let’s Collaborate</h1>
+        <p class="lead">Email: <a href="mailto:pkirkire@eupraxiaconsulting.com">pkirkire@eupraxiaconsulting.com</a> • Phone: <a href="tel:+919512190010">+91 95121 90010</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-card reveal-left" onsubmit="return handleContact(event);">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="org">Organization</label>
+          <input id="org" name="org">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn ghost" type="button" onclick="window.location='mailto:pkirkire@eupraxiaconsulting.com'">Email Direct</button>
+          </div>
+          <p id="formMsg" class="muted small" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-card info-card reveal-right">
+          <h4>Offices</h4>
+          <p>Vadodara • Bangalore • Delaware</p>
+          <h4>Address (Vadodara)</h4>
+          <p class="small muted">204-209, Sarthi Complex, Opp. Nutan Bharat Club, Alkapuri, Vadodara-390007, Gujarat, India.</p>
+          <h4>Quick Links</h4>
+          <ul class="bullets">
+            <li><a href="send.html">SEND Services</a></li>
+            <li><a href="tools.html">Tools & Validation</a></li>
+            <li><a href="trends.html">Trends & Reports</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="f-col">
+      <img src="https://eupraxiaconsulting.com/assets/images/logo/euprexia-logo.png" class="logo-sm" alt="">
+      <p class="muted small">Delivering SEND & regulatory data solutions.</p>
+    </div>
+    <div class="f-col"><h4>Contact</h4><p class="small"><a href="mailto:pkirkire@eupraxiaconsulting.com">pkirkire@eupraxiaconsulting.com</a><br>+91 95121 90010</p></div>
+  </div>
+  <div class="container copyright center">
+    <small>© <span id="year"></span> Eupraxia Consulting. All rights reserved.</small>
+  </div>
+</footer>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
